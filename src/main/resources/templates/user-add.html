@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add user</title>
+</head>
+<body>
+<div>
+    <form action="#" th:action="@{/admin/add}" method="post">
+        <input required type="text" th:name="firstName" placeholder="First name"><br/>
+        <input required type="text" th:name="lastName" placeholder="Last name"><br/>
+        <input required type="text" th:name="age" placeholder="Age"><br/>
+        <input required type="text" th:name="email" placeholder="Email"><br/>
+        <input required type="text" th:name="password" placeholder="Password"><br/>
+        <input type="checkbox" th:name="user_role" value="USER">Choose user
+        <input type="checkbox" th:name="admin_role" value="ADMIN">Choose admin<br/>
+        <input type="submit" value="Save">
+    </form>
+</div>
+</body>
+</html>
